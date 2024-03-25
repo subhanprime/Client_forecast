@@ -1,0 +1,37 @@
+stages:
+  - test
+  - build
+
+before_script:
+  - chmod +x ./script.sh
+  - ./script.sh
+  - yarn install
+
+test:
+  stage: test
+  script:
+    - yarn lint
+    - yarn test --coverageReporters=text-summary > coverage-summary.txt
+    - COVERAGE_CURRENT=$(awk '/Lines/ {print int($3)}' coverage-summary.txt)
+    - COVERAGE_PREVIOUS=$(awk '/Lines/ {print int($3)}' /home/coverage/scheduling/coverage-summary-prev.txt)
+    - "echo Current Coverage: $COVERAGE_CURRENT"
+    - "echo Previous Coverage: $COVERAGE_PREVIOUS"
+    - if [ "$COVERAGE_CURRENT" -lt "$COVERAGE_PREVIOUS" ]; then echo "Test coverage decreased!" && exit 1; fi
+
+    - sudo mv coverage-summary.txt /home/coverage/scheduling/coverage-summary-prev.txt
+  only:
+    - merge_requests
+    - dev
+
+build:
+  stage: build
+  script:
+    - yarn build
+  dependencies:
+    - test
+  only:
+    - merge_requests
+    - dev
+  artifacts:
+    paths:
+      - $CI_PROJECT_DIR/build

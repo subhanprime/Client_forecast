@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.tablecls::-webkit-scrollbar {
+  width: 6px;
+  /* Set the width of the scrollbar */
+}
+
+.tablecls::-webkit-scrollbar-thumb {
+  background-color: white;
+  /* Set the color of the scrollbar thumb */
+}
+
+.tablecls::-webkit-scrollbar-track {
+  background: transparent;
+  /* Set the background color of the scrollbar track */
+}
+
+.tablecls {
+  scrollbar-width: thin;
+  /* Set the width of the scrollbar */
+  scrollbar-color: white transparent;
+  /* Set the color of the scrollbar thumb and track */
+}
+
+.tag-list-34d::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  /* Set the width of the scrollbar */
+}
+
+/* overall scrooll start */
+
+::-webkit-scrollbar {
+  width: 3px;
+  /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #C0CAD7;
+  /* Set the color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  /* Set the background color of the scrollbar track */
+}
+
+* {
+  scrollbar-width: thin;
+  /* Set the width of the scrollbar */
+  scrollbar-color: #C0CAD7 transparent;
+  /* Set the color of the scrollbar thumb and track */
+}
+
+/* overall scrooll end */
+
+
+.linkIcon-wrapper {
+  z-index: 100;
+  display: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.table-record-row:hover .linkIcon-wrapper {
+  transition: all 0.3 ease-in-out;
+  display: flex;
+  background-color: #BCCEF8;
+  color: black !important;
+}
+
+.row-projectName {
+  text-transform: lowercase;
+  /* text-transform: capitalize !important; */
+}
+
+.table-record-row:hover .row-projectName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+
+.header-input-908d {
+  z-index: 900 !important;
+  cursor: pointer;
+
+}
+
+
+.linkIconDiv-chs3s {
+  display: hidden !important;
+}

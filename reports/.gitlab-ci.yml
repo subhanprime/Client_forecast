@@ -1,0 +1,25 @@
+stages:
+  - build  # Define the 'build' stage
+  - test   # Define the 'test' stage
+
+before_script:
+  - chmod +x ./script.sh  # Make the 'script.sh' file executable
+  - ./script.sh           # Execute the 'script.sh' script
+  - yarn install          # Install dependencies using Yarn
+
+test:
+  stage: test                      # Define the 'test' stage job
+  script:
+    - yarn test                   # Run tests using Yarn
+    - yarn lint                   # Perform linting using Yarn
+  only:
+    - merge_requests              # Run only for merge requests
+    - dev                         # Run only for the 'dev' branch
+  
+build:
+  stage: build                     # Define the 'build' stage job
+  script:
+    - yarn build                  # Build the project using Yarn
+  only:
+    - merge_requests              # Run only for merge requests
+    - dev                         # Run only for the 'dev' branch

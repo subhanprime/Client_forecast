@@ -1,0 +1,38 @@
+{
+  "extends": ["airbnb", "airbnb-typescript", "plugin:import/errors",
+  "plugin:import/warnings",
+  "plugin:import/typescript"],
+  "plugins": ["@typescript-eslint"],
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "react/jsx-props-no-spreading": "off",
+    // "quotes": [2, "single", { "avoidEscape": true }],
+    "indent": ["error", 2],
+    // "linebreak-style": ["error", "windows", "unix"],
+    "@typescript-eslint/quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "no-async-promise-executor":"off",
+    "jsx-a11y/label-has-associated-control":"off",
+    "@typescript-eslint/no-unused-vars":"off",
+    "import/prefer-default-export":"off",
+    "max-len":"off",
+    "no-restricted-syntax":"off",
+    "no-param-reassign":"off",
+    "no-unsafe-optional-chaining":"off",
+    "global-require":"off",
+    "jsx-a11y/no-static-element-interactions":"off",
+    "react/require-default-props":"off",
+    "react/no-unused-prop-types":"off",
+    "no-restricted-globals":"off"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "name": "@tuomo/people",
+  "version": "0.1.0",
+  "main": "./src/index.tsx",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.7",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/date-fns": "^2.6.0",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-datepicker": "^4.19.3",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-redux": "^7.1.31",
+    "@types/react-table": "^7.7.18",
+    "axios": "^1.6.2",
+    "date-fns": "^2.30.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "firebase": "^10.7.1",
+    "lucide-react": "^0.292.0",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.24.0",
+    "react-dom": "^18.2.0",
+    "react-easy-crop": "^5.0.4",
+    "react-image-crop": "^11.0.2",
+    "react-redux": "^8.1.3",
+    "react-scripts": "5.0.1",
+    "react-table": "^7.8.0",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^4.4.2",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test": "react-scripts test --coverage --transformIgnorePatterns=\"node_modules/(?!axios)/\"",
+    "test-file": "react-scripts test ./src/pages/people.test.tsx  --transformIgnorePatterns=\"node_modules/(?!axios)/\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(gridstack)/)",
+      "node_modules/(?!axios)"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/react-datepicker": "^4.19.3",
+    "@typescript-eslint/eslint-plugin": "6.0.0",
+    "@typescript-eslint/parser": "6.0.0",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "react-datepicker": "^4.24.0"
+  }
+}

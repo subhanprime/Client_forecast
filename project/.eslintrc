@@ -1,0 +1,31 @@
+{
+  "extends": ["airbnb", "airbnb-typescript"],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "rules": {
+    "react/jsx-props-no-spreading": "off",
+    // "quotes": [2, "single", { "avoidEscape": true }]
+    "@typescript-eslint/quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "linebreak-style": 0,
+    "no-console":"warn",
+    "react/require-default-props": "off",
+    "no-nested-ternary":"off",
+    "react/no-array-index-key":"warn",
+    "react/no-unknown-property":"off",
+    "@typescript-eslint/no-unused-vars":"warn",
+    "jsx-a11y/click-events-have-key-events":"off",
+    "jsx-a11y/no-static-element-interactions":"off",
+    "jsx-a11y/control-has-associated-label":"off",
+    "no-param-reassign":"off",
+    "no-plusplus":"off",
+    "react/no-unstable-nested-components":"off"
+  }
+}

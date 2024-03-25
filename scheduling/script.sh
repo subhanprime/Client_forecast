@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo REACT_APP_SCHED_BACKEND_URL=$REACT_APP_SCHED_BACKEND_URL >> .env

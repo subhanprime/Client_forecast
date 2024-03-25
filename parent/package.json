@@ -1,0 +1,62 @@
+{
+  "name": "@tuomo/parent",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.tsc",
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tuomo/people": "^0.1.0",
+    "@tuomo/project": "^0.1.0",
+    "@tuomo/reports": "^0.1.0",
+    "@tuomo/scheduling": "^0.1.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.65",
+    "@types/react": "^18.2.39",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "autoprefixer": "^10.4.16",
+    "craco": "^0.0.3",
+    "dotenv": "^16.3.1",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "lucide-react": "^0.295.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
+    "react-scripts": "5.0.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "craco start & react-app-rewired && postcss src/css/app.css -o public/app.css",
+    "build": "craco build",
+    "test": "react-scripts test --coverage --transformIgnorePatterns=\"node_modules/(?!axios)/\"",
+    "eject": "craco eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "react-app-rewire-alias": "^1.1.7"
+  }
+}

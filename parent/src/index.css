@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* For webkit-based browsers like Chrome/Safari */
+/* Customize the scrollbar width, color, and track */
+::-webkit-scrollbar {
+  width: 6px;
+  /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  /* Set the color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  /* Set the background color of the scrollbar track */
+}
+
+* {
+  scrollbar-width: thin;
+  /* Set the width of the scrollbar */
+  scrollbar-color: lightgray transparent;
+  /* Set the color of the scrollbar thumb and track */
+}
+.svg-background {
+  position: absolute;
+  top: 0;
+  left: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.svg-background div img {
+  transform: translate3d(calc(-50% + 121px),calc(-50% + 397px),0);
+}
+.svg-background svg.cloud path.path-pat {
+  fill: #eef7ff;
+}
+.svg-background svg.cloud path.path-bg {
+  fill: #cee7fe;
+}
+.svg-background svg.cloud defs pattern circle,.svg-background svg.cloud defs pattern rect{fill:#cee7fe}.svg-background svg.cloud defs pattern rect{transform-box:fill-box;transform-origin:center;transform:rotate(-45deg)}.svg-background svg.illustration{position:absolute;top:50%;left:50%}@media screen and (max-width: 767px){.svg-background svg.illustration{display:none}}main.page-login form #other-options{position:relative;left:-4px;width:calc(100% + 8px);padding:0 4px;margin-top:0;transition-property:height;transition-duration:.5s;transition-timing-function:cubic-bezier(.3,.76,.27,1);will-change:height;overflow:hidden}main.page-login form #other-options .field:nth-child(1){margin-top:20px}main.page-login form.hide-other-options #other-options{height:0}main.page-login form.hide-other-options .button-text svg{transform:scaleY(1)}main.page-login form h4{margin-top:10px}main.page-login .button-text{margin-left:auto;margin-right:auto}main.page-login .button-text svg{transform:scaleY(-1)}main.page-login .svg-background svg.illustration{width:339px;height:863px;transform:translate3d(calc(-50% + 450px),calc(-50% + 250px),0)}@media screen and (min-width: 1441px) and (max-width: 1920px){main.page-login .svg-background svg.illustration{transform:translate3d(calc(-50% + 425px),-50%,0)}}@media screen and (min-width: 1921px){main.page-login .svg-background svg.illustration{transform:translate3d(calc(-50% + 425px),-50%,0)}}

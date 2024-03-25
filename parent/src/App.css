@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.App {
+  text-align: center;
+}
+.bg-custom-gray {
+  background-color: '#F3F2F5' !important;
+}
+
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.active img {
+  background-color: rgb(183, 217, 248);
+  /* padding: 5px; */
+  border-radius: 10px;
+  /* transition: background-color 0.1s ease-in-out, padding 0.1s ease-in-out, border-radius 0.1s ease-in-out; */
+}
+
+.active  {
+  background-color: rgb(183, 217, 248);
+  /* padding: 5px; */
+  border-radius: 10px;
+  /* transition: background-color 0.1s ease-in-out, padding 0.1s ease-in-out, border-radius 0.1s ease-in-out; */
+}

@@ -1,0 +1,170 @@
+
+  .rolo-stack {
+    position: relative;
+  }
+
+  .grid-row-custom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .item-container{
+    container-name: item;
+  }
+  .item-name{
+    display: flex;
+    flex-direction: column;
+  }
+  .item-time{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @container item (height < 41px) {
+    .item-name{
+      display: flex;
+      flex-direction: row;
+      gap:2px;
+      overflow: hidden;
+    }
+    .item-time{
+      display: flex;
+      flex-direction: row;
+      gap:2px;
+      overflow: hidden;
+
+    }
+  }
+
+  /* HTML: <div class="custom-loader"></div> */
+.custom-loader {
+  width: 22px;
+  padding: 4px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #ffffff;
+  --_m:
+    conic-gradient(#0000 10%,#000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {to{transform: rotate(1turn)}}
+
+  .date-container {
+    display: grid;
+    top: 60px;
+    margin-bottom: 5px;
+    position: sticky;
+    grid-auto-flow: column;
+    height: 40px;
+    z-index: 20;
+  }
+  .date-header-container {
+    /* width: 700px; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .month-header {
+    height: 15px;
+    font-size: 12px;
+    font-weight: 200;
+    gap: 40%;
+
+    display: flex;
+    background-color: #f3f2f5;
+  }
+  .date-header {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    position: relative;
+  }
+  .date-header-body {
+
+    font-weight: "bold";
+    width: 100%;
+    position: relative;
+  }
+  .date-header-body-date {
+    display: flex;
+    align-items: center;
+    background-color: #f3f2f5;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    position: relative;
+  }
+
+  .date-header-body-day {
+    /* margin-top: 5px; */
+    height: 100vh;
+    width: 100px;
+    border-left: 1px rgba(0, 0, 0, 0.1) solid;
+    position: relative;
+  }
+
+  .week-border {
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+
+
+  .grid-container {
+    margin-top: 50px;
+    display: flex;
+
+    flex-direction: column;
+    position: relative;
+  }
+
+  .gs-365 .empty-stack-item {
+    height: 50px;
+  }
+  .gs-366 .empty-stack-item {
+    height: 50px;
+  }
+
+
+  .weekend-gradient {
+    background: linear-gradient(
+        -45deg,
+        rgb(230, 230, 230) 12.5%,
+        transparent 12.5%,
+        transparent 50%,
+        rgb(230, 230, 230) 50%,
+        rgb(230, 230, 230) 62.5%,
+        transparent 62.5%,
+        transparent
+      )
+      0% 0% / 5px 5px;
+
+  }
+  /* .weekend-gradient {
+    background: linear-gradient(
+        -45deg,
+        rgb(230, 230, 230) 12.5%,
+        white 12.5%,
+        white 50%,
+        rgb(230, 230, 230) 50%,
+        rgb(230, 230, 230) 62.5%,
+        white 62.5%,
+        white
+      )
+      0% 0% / 5px 5px;
+  } */
+
+  /* .grid-stack-item-content {
+    color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  } */

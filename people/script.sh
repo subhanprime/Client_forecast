@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo REACT_APP_BASE_URL_POEPLE=$REACT_APP_BASE_URL >> .env

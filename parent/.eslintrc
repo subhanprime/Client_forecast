@@ -1,0 +1,62 @@
+{
+  "extends": ["airbnb", "airbnb-typescript","plugin:import/errors","plugin:import/warnings","plugin:import/typescript"],
+  "plugins": ["@typescript-eslint"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "jsx-a11y/label-has-associated-control":"off",
+    "react/jsx-props-no-spreading": "off",
+    // "quotes": [2, "single", { "avoidEscape": true }],
+    "indent": ["error", 2],
+    
+    // "linebreak-style": ["error", "windows", "unix"],
+    "@typescript-eslint/quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "jsx-a11y/click-events-have-key-events":"off",
+    "jsx-a11y/no-static-element-interactions":"off",
+    "no-param-reassign":"off",
+    "react/require-default-props":"off",
+    "import/no-extraneous-dependencies":"off",
+    "react/no-unstable-nested-components":"off",
+    "no-nested-ternary":"off",
+    "jsx-a11y/control-has-associated-label":"off",
+    "react/button-has-type":"off",
+    "react/no-unescaped-entities":"off",
+    "jsx-a11y/no-noninteractive-element-interactions":"off"
+  }
+}
+
+// {
+//   "extends": ["airbnb", "airbnb-typescript"],
+//   "parserOptions": {
+//     "project": "./parent/tsconfig.json"
+//   },
+//   "rules": {
+//     "linebreak-style": 0,
+//     "react/jsx-props-no-spreading": "off",
+//     // "quotes": [2, "single", { "avoidEscape": true }],
+//     "indent": ["error", 2],
+//     // "linebreak-style": ["error", "windows", "unix"],
+//     "@typescript-eslint/quotes": [
+//       "error",
+//       "single",
+//       {
+//         "avoidEscape": true,
+//         "allowTemplateLiterals": true
+//       }
+//     ],
+//     "no-async-promise-executor":"off",
+//     "jsx-a11y/label-has-associated-control":"off",
+//     "@typescript-eslint/no-unused-vars":"off",
+//     "import/prefer-default-export":"off",
+//     "max-len":"off"
+//   }
+// }
