@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@common/*": [
+                "../test/src/common/*"
+            ],
+            // Add more aliases as needed
+        }
+    }
+}

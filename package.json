@@ -1,0 +1,16 @@
+{
+  "name": "@tuomo/root",
+  "private": true,
+  "workspaces": [
+    "parent",
+    "project",
+    "scheduling",
+    "reports",
+    "test",
+    "people"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.0.0"
+  }
+}
